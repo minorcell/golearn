@@ -56,6 +56,16 @@ func main() {
 	fmt.Println("Min:", utils.Min(1, 2))
 	fmt.Println("Abs:", utils.Abs(-1))
 	fmt.Println("Pow:", utils.Pow(2, 3))
+
+	// func can be assigned to a variable
+	fmt.Println("Add:", utils.Add(1, 2))
+
+	// Get the sequence generator function and then call it
+	sequenceGenerator := utils.GetSequence()
+	fmt.Println("GetSequence first call:", sequenceGenerator())
+	fmt.Println("GetSequence second call:", sequenceGenerator())
+	fmt.Println("GetSequence third call:", sequenceGenerator())
+
 }
 
 // 单行注释
