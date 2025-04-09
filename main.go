@@ -66,6 +66,13 @@ func main() {
 	fmt.Println("GetSequence second call:", sequenceGenerator())
 	fmt.Println("GetSequence third call:", sequenceGenerator())
 
+	// array
+	blances := [...]int{1:0, 2:1, 3:2, 4:3, 5:4}
+
+	for index, value := range blances {
+		fmt.Printf("index:%d, value:%d\n", index, value)
+	}
+	
 }
 
 // 单行注释
