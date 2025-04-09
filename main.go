@@ -2,7 +2,9 @@ package main
 
 import (
 	"fmt"
+
 	"golearn/ch1"
+	"golearn/learn"
 	"golearn/utils"
 	"reflect"
 )
@@ -67,12 +69,14 @@ func main() {
 	fmt.Println("GetSequence third call:", sequenceGenerator())
 
 	// array
-	blances := [...]int{1:0, 2:1, 3:2, 4:3, 5:4}
+	blances := [...]int{1: 0, 2: 1, 3: 2, 4: 3, 5: 4}
 
 	for index, value := range blances {
 		fmt.Printf("index:%d, value:%d\n", index, value)
 	}
-	
+
+	learn.StructTest()
+
 }
 
 // 单行注释
