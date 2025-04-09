@@ -51,6 +51,11 @@ func main() {
 	}
 
 	fmt.Println("primes:", primes)
+
+	fmt.Println("Max:", utils.Max(1, 2))
+	fmt.Println("Min:", utils.Min(1, 2))
+	fmt.Println("Abs:", utils.Abs(-1))
+	fmt.Println("Pow:", utils.Pow(2, 3))
 }
 
 // 单行注释
