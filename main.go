@@ -76,6 +76,7 @@ func main() {
 	}
 
 	learn.StructTest()
+	learn.SliceTest()
 
 }
 
