@@ -1,6 +1,9 @@
 package learn
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 func Factorial(n uint64) (result uint64) {
 	if n > 0 {
@@ -22,11 +25,19 @@ func sqrtRecursive(x, guess, prevGuess, epsilon float64) float64 {
 	return sqrtRecursive(x, newGuess, guess, epsilon)
 }
 
-func Sqrt(x float64) float64 {
-	return sqrtRecursive(x, 1.0, 0.0, 1e-9)
+func Sqrt(x float64) (float64, error) {
+	if x < 0 {
+		return 0, errors.New("负数不能开平方根")
+	}
+	return sqrtRecursive(x, 1.0, 0.0, 1e-9), nil
 }
 
 func RecursionTest() {
 	fmt.Println(Factorial(5))
-	fmt.Println(Sqrt(25))
+	result, err := Sqrt(25)
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Println(result)
+	}
 }

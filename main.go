@@ -80,6 +80,9 @@ func main() {
 	learn.MapTest()
 	learn.RecursionTest()
 	learn.TypeTranslateTest()
+	learn.InterfaceTest1()
+	learn.InterfaceTest2()
+	learn.ErrorTest()
 }
 
 // 单行注释
