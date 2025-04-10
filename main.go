@@ -78,6 +78,7 @@ func main() {
 	learn.StructTest()
 	learn.SliceTest()
 	learn.MapTest()
+	learn.RecursionTest()
 }
 
 // 单行注释
