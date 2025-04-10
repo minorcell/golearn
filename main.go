@@ -83,6 +83,7 @@ func main() {
 	learn.InterfaceTest1()
 	learn.InterfaceTest2()
 	learn.ErrorTest()
+	learn.ConcurrentTest()
 }
 
 // 单行注释
