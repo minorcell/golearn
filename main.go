@@ -79,6 +79,7 @@ func main() {
 	learn.SliceTest()
 	learn.MapTest()
 	learn.RecursionTest()
+	learn.TypeTranslateTest()
 }
 
 // 单行注释
