@@ -77,7 +77,7 @@ func main() {
 
 	learn.StructTest()
 	learn.SliceTest()
-
+	learn.MapTest()
 }
 
 // 单行注释
